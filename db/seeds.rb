@@ -21,17 +21,3 @@ csv.each do |row|
   state.percentage_degree = row['share_population_with_high_school_degree']
   state.save
 end
-
-
-# t.string "name"
-# t.string "abbreviation"
-# t.integer "median_household_income"
-# t.float "percentage_unemployment"
-# t.float "percentage_metro"
-# t.float "percentage_degree"
-
-# state,median_household_income,share_unemployed_seasonal,share_population_in_metro_areas,share_population_with_high_school_degree
-
-# abb_csv_text = File.read(Rails.root.join('lib','seeds','abbreviations.csv'))
-# csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-# puts abb_csv_text
